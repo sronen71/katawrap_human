@@ -1,0 +1,2 @@
+katawrap/b18c384nbt-humanv0.bin.gz filter=lfs diff=lfs merge=lfs -text
+katawrap/default_model.bin.gz filter=lfs diff=lfs merge=lfs -text
