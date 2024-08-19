@@ -1,0 +1,41 @@
+2024-08-19 02:22:20-0600: Running with following config:
+analysisPVLen = 15
+logDir = analysis_logs
+maxVisits = 500
+nnCacheSizePowerOfTwo = 23
+nnMaxBatchSize = 64
+nnMutexPoolSizePowerOfTwo = 17
+nnRandomize = true
+numAnalysisThreads = 2
+numSearchThreads = 16
+reportAnalysisWinratesAs = BLACK
+
+2024-08-19 02:22:20-0600: Analysis Engine starting...
+2024-08-19 02:22:20-0600: KataGo v1.15.3
+2024-08-19 02:22:20-0600: nnRandSeed0 = 2157612273838719722
+2024-08-19 02:22:20-0600: After dedups: nnModelFile0 = default_model.bin.gz useFP16 auto useNHWC auto
+2024-08-19 02:22:20-0600: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2024-08-19 02:22:23-0600: Cuda backend thread 0: Found GPU NVIDIA GeForce RTX 3060 Ti memory 8229224448 compute capability major 8 minor 6
+2024-08-19 02:22:23-0600: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2024-08-19 02:22:23-0600: Cuda backend thread 0: Model name: kata1-b28c512nbt-s7503868160-d4406856118
+2024-08-19 02:22:27-0600: nnRandSeed0 = 7029709265914341945
+2024-08-19 02:22:27-0600: After dedups: nnModelFile0 = b18c384nbt-humanv0.bin.gz useFP16 auto useNHWC auto
+2024-08-19 02:22:27-0600: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2024-08-19 02:22:28-0600: Cuda backend thread 0: Found GPU NVIDIA GeForce RTX 3060 Ti memory 8229224448 compute capability major 8 minor 6
+2024-08-19 02:22:28-0600: Cuda backend thread 0: Model version 15 useFP16 = true useNHWC = true
+2024-08-19 02:22:28-0600: Cuda backend thread 0: Model name: b18c384nbt-humanv0
+2024-08-19 02:22:30-0600: Loaded config analysis_example.cfg
+2024-08-19 02:22:30-0600: Loaded model default_model.bin.gz
+2024-08-19 02:22:30-0600: Warning: Provided -human-model but humanSLProfile is not yet set. The human SL model will only be used on queries that provide humanSLProfile in overrideSettings.
+2024-08-19 02:22:30-0600: Analyzing up to 2 positions at a time in parallel
+2024-08-19 02:22:30-0600: Started, ready to begin handling requests
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_0","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_1","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_2","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_3","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_4","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_5","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_6","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:30-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_7","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:39-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_8","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
+2024-08-19 02:22:57-0600: Warning: {"field":"analyzeLastTurn","id":"7f77f2c3-b81c-452f-8506-9b31a9f7b56b_9","warning":"Unexpected or unused field, do you have a typo? (set warnUnusedFields=false in the config to disable this warning)"}
