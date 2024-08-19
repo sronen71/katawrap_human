@@ -57,6 +57,7 @@ if __name__ == "__main__":
     parser.add_argument('-netcat', action='store_true', help='use this option when netcat (nc) is used as katago command')
     parser.add_argument('-silent', action='store_true', help='do not print progress info to stderr')
     parser.add_argument('-debug', action='store_true', help='print debug info to stderr')
+    parser.add_argument('-human_rank',help='human rank if desired',required=False)
     parser.add_argument('katago-command', metavar='KATAGO_COMMAND', help='(ex.) ./katago analysis -config analysis.cfg -model model.bin.gz', nargs=argparse.REMAINDER)
 
     args = vars(parser.parse_args())
@@ -135,6 +136,8 @@ def cooked_query_for_katago(given_query, override_after_sgf):
     cook_include_unsettledness(query)
     fix_rules(query)
     guess_rules_etc(query)
+    if args["human_rank"] is not None:
+        cook_human(query)
     return (query, extra)
 
 # each cook
@@ -261,6 +264,12 @@ def fix_rules(query):
         query['rules'] = a[0]
     else:
         del query['rules']  # guessed later
+
+def cook_human(query):
+    query["includePolicy"]=True
+    
+    query["overrideSettings"]={"humanSLProfile":args["human_rank"],"ignorePreRootHistory":False,"humanSLRootExploreProbWeightless":0.5,"humanSLCpuctPermanent":2.0}
+    
 
 # misc.
 
